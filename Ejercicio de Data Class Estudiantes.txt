@@ -1,0 +1,26 @@
+data class Direccion(
+    val departamento: String,
+    val municipio: String,
+    val distrito: String,
+    val complemento: String
+)   
+
+data class Estudiante(
+    val nombre: String,
+    val carnet: String,
+    val edad: Int,
+    val carrera: String,
+    val direccion: Direccion
+)
+
+fun main() {
+    val ListEstudent = listOf(
+        Estudiante("Omar", "123", 20, "Desarrollo de Software", Direccion("Paz Este", "La Paz", "San Rafael Obrajuelo","Col. Las Las brisas 2")),
+        Estudiante("Jona", "456", 20, "Desarrollo de Software", Direccion("Paz Este", "La Paz", "San Rafael Obrajuelo","Canton el Carao, casa #4")),
+        Estudiante("Andy", "789", 21, "Desarrollo de software", Direccion("Paz Este", "La Paz", "San Rafael Obrajuelo","Col. Las Las brisas 1"))
+    )
+
+    println(ListEstudent)
+
+}
+[Estudiante(nombre=Omar, carnet=123, edad=20, carrera=Desarrollo de Software, direccion=Direccion(departamento=Paz Este, municipio=La Paz, distrito=San Rafael Obrajuelo, complemento=Col. Las Las brisas 2)), Estudiante(nombre=Jona, carnet=456, edad=20, carrera=Desarrollo de Software, direccion=Direccion(departamento=Paz Este, municipio=La Paz, distrito=San Rafael Obrajuelo, complemento=Canton el Carao, casa #4)), Estudiante(nombre=Andy, carnet=789, edad=21, carrera=Desarrollo de software, direccion=Direccion(departamento=Paz Este, municipio=La Paz, distrito=San Rafael Obrajuelo, complemento=Col. Las Las brisas 1))]
