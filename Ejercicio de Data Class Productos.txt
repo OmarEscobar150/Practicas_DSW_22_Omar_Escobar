@@ -1,0 +1,21 @@
+data class Producto(
+    val id: String,
+    val nombre: String,
+    val precio: Double,
+    val descripcion: String,
+    val marca: String,
+    val color: String,
+    val stock: Int,
+    val promocion: Boolean
+)
+
+fun main(){
+    val ListProducts = listOf(
+        Producto("HR23","iPhone 15", 999.9,"teléfono de alta gama","Apple","Negro", 15, false),
+        Producto("HR24", "Samsung Galaxy", 699.9,"teléfono android","Samsung", "Azul",8,false ),
+        Producto("HR25", "Xiaomi Redmi", 299.9,"teléfono económico","Xiaomi", "Blanco", 12, true ),
+    )
+    println(ListProducts)
+}
+
+[Producto(id=HR23, nombre=iPhone 15, precio=999.9, descripcion=teléfono de alta gama, marca=Apple, color=Negro, stock=15, promocion=false), Producto(id=HR24, nombre=Samsung Galaxy, precio=699.9, descripcion=teléfono android, marca=Samsung, color=Azul, stock=8, promocion=false), Producto(id=HR25, nombre=Xiaomi Redmi, precio=299.9, descripcion=teléfono económico, marca=Xiaomi, color=Blanco, stock=12, promocion=true)]
