@@ -1,0 +1,33 @@
+/*Guardar un arreglo 6 notas de estudiantes
+asignarle valores a cada elemento del
+arreglo y por ultimo calcular el promedio
+de las notas e imprimirlo
+*/
+
+fun main () {
+    val notas = arrayOf(10.0, 10.0 , 10.0 , 10.0 , 10.0, 10.0)
+
+    var suma = 0.0 
+    var promedioNotas = 0.0
+
+    println("Todas las notas:")
+    for (i in notas!!.indices){
+        println(notas[i])
+        suma = suma  + notas[i]!!
+    }
+
+
+    println("El promedio total es de:")
+    promedioNotas = suma/6
+    println(promedioNotas)
+}
+
+Todas las notas:
+10.0
+10.0
+10.0
+10.0
+10.0
+10.0
+El promedio total es de:
+10.0
